@@ -1,0 +1,9 @@
+<h4>Listado de Coches:</h4>
+
+<ul class="list-group">
+  <li *ngFor="let character of characterList" class="list-group-item">
+    <span>{{character.name}}</span>
+    <strong>- Precio: </strong>
+    <span>{{character.precio}}</span>
+  </li>
+</ul>
