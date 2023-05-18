@@ -13,5 +13,8 @@ export class CochesComponent {
     },{
       name:'Audi',
       precio:40000
+    },{
+      name:'Mini',
+      precio:35000
     }];
 }

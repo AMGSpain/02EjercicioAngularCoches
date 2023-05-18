@@ -1,9 +1,18 @@
 <h4>Listado de Coches:</h4>
 
 <ul class="list-group">
-  <li *ngFor="let character of characterList" class="list-group-item">
-    <strong>{{character.name}}.</strong>
+  <li *ngFor="let character of characterList;
+  let i = index;
+  let isFirst = first;
+  let isLast = last;"
+
+  class="list-group-item"
+  [ngClass]="{ 'list-group-item-dark': isFirst,
+  'list-group-item-success': isLast}">
+    <strong class="text-prinary">{{i+1}}. </strong>
+    <strong>{{character.name}}:</strong>
     <span> - Precio: </span>
     <strong>{{character.precio}}€</strong>
+    <span> <p> Este es el último: {{ i === characterList.length - 1}}</p></span>
   </li>
 </ul>
