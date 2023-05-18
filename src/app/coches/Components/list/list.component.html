@@ -10,7 +10,12 @@
   [ngClass]="{ 'list-group-item-dark': isFirst,
   'list-group-item-success': isLast}">
     <strong class="text-prinary">{{i+1}}. </strong>
+<<<<<<< HEAD
     <strong>{{character.name}}:</strong>
+=======
+    <strong>{{character.name}},</strong>
+    <strong>{{character.modelo}}:</strong>
+>>>>>>> 944f9a8d1af24bb904b3257fee88d8e232576f23
     <span> - Precio: </span>
     <strong>{{character.precio}}€</strong>
     <span> <p> Este es el último: {{ i === characterList.length - 1}}</p></span>

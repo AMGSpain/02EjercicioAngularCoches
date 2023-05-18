@@ -11,6 +11,7 @@ export class ListComponent {
   @Input()
   public characterList: Character[] = [{
     name:'Trunk',
+    modelo:'Trunk',
     precio:0
   }]
 }
