@@ -9,9 +9,15 @@ import { Character } from '../Interfaces/character.interfaces';
 export class CochesComponent {
     public characters: Character[] = [{
       name:'Ford',
+      modelo:'Mondeo',
       precio:20000
     },{
       name:'Audi',
+      modelo:'A1',
       precio:40000
+    },{
+      name:'Mini',
+      modelo:'Cooper',
+      precio:35000
     }];
 }
